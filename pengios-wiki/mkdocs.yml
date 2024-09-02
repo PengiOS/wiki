@@ -1,1 +1,8 @@
 site_name: PengiOS Wiki
+theme:
+  name: dracula
+  custom_dir: dracula
+  colorscheme: dracula
+nav:
+- Home: index.md
+- Get Started: getstarted.md
