@@ -35,21 +35,3 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./site/
-        
-  deploy:
-    needs: build
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
-    steps:
-      - name: Deploy artifact
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: artifact
-        
