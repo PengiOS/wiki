@@ -1,4 +1,4 @@
-name: Deploy MkDocs to website repo 
+name: Deploy MkDocs to website repo
 
 on:
   push:
@@ -6,46 +6,50 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
-   steps:
+    steps:
       - name: Checkout the code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Get the commit message
-        id: get_commit_message
-        run: |
-          COMMIT_MESSAGE=$(git log -1 --pretty=%B | head -n 1)
-          echo "COMMIT_MESSAGE=$(echo $COMMIT_MESSAGE | base64)" >> $GITHUB_ENV
-
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
       - name: Install MkDocs
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-dracula-theme
+          pip install mkdocs mkdocs-dracula-theme
 
       - name: Build the MkDocs site
         run: mkdocs build
 
-      - name: Create target directory if it doesn't exist
-        run: mkdir -p website-repo/wiki
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - name: Copy the built site
-        run: |
-          rm -rf website-repo/wiki/*
-          cp -r site/* website-repo/wiki/
-
-       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          branch: releases/v4
-          folder: .
-          clean: false
-          single-commit: true
+          path: ./site/
+        
+  deploy:
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    steps:
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: artifact
+        
