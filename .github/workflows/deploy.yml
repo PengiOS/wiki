@@ -34,7 +34,6 @@ jobs:
       - name: Build the MkDocs site
         run: mkdocs build
 
-
       - name: Create target directory if it doesn't exist
         run: mkdir -p website-repo/wiki
 
@@ -52,5 +51,3 @@ jobs:
           git add .
           git commit -m "Wiki: $COMMIT_MESSAGE"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
