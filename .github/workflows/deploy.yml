@@ -42,12 +42,10 @@ jobs:
           rm -rf website-repo/wiki/*
           cp -r site/* website-repo/wiki/
 
-      - name: Commit and push changes
-        run: |
-          cd website-repo
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          COMMIT_MESSAGE=$(echo ${{ env.COMMIT_MESSAGE }} | base64 --decode || echo "Update wiki")
-          git add .
-          git commit -m "Wiki: $COMMIT_MESSAGE"
-          git push
+       - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: releases/v4
+          folder: .
+          clean: false
+          single-commit: true
