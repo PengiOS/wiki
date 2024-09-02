@@ -33,6 +33,17 @@ jobs:
         with:
           path: ./site/
         
-      - name: Deploy to GitHub Pages
+  deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    steps:
+      - name: Deploy artifact
+        id: deployment
         uses: actions/deploy-pages@v4
         
