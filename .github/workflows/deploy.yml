@@ -26,7 +26,7 @@ jobs:
           pip install mkdocs mkdocs-dracula-theme
 
       - name: Build the MkDocs site
-        run: mkdocs build
+        run: mkdocs gh-pages
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
