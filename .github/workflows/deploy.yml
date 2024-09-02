@@ -1,4 +1,4 @@
-name: Deploy MkDocs to website repo
+name: Deploy MkDocs to website repo 
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    steps:
+   steps:
       - name: Checkout the code
         uses: actions/checkout@v2
         with:
