@@ -34,12 +34,6 @@ jobs:
       - name: Build the MkDocs site
         run: mkdocs build
 
-      - name: Checkout the target repo
-        uses: actions/checkout@v2
-        with:
-          repository: PengiOS/pengios.github.io
-          path: website-repo
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Create target directory if it doesn't exist
         run: mkdir -p website-repo/wiki
