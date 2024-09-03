@@ -3,6 +3,7 @@ theme:
   name: dracula
   custom_dir: dracula
   colorscheme: dracula
+  favicon: img/favicon.ico
 nav:
 - Home: index.md
 - Get Started:
