@@ -4,6 +4,7 @@ theme:
   # custom_dir: dracula
   colorscheme: dracula
   favicon: img/favicon.ico
+  #extra_css: /css/style.css
 nav:
 - Home: index.md
 - Get Started:
@@ -13,15 +14,16 @@ nav:
 - Installation:
   - PengiOS Beginner: beginner-install.md
   - PengiOS Pro: pro-install.md
-- Features: features.md
-- PengiOS Pro: pro.md
+- Features:
+  - Pengi OS Pro: pro.md
+  - Pengi OS Beginner: beginner.md
 - Configuration: config.md
 - Support:
   - Forums: https://github.com/PengiOS/Forums/discussions
   - FAQ: faq.md
   - Troubleshooting: troubleshoot.md
 - Join our discord: https://discord.gg/nEYhYFEfpA\
-- Changelogs: github.com/pengios/pengios
+- Changelogs: https://github.com/pengios/pengios
 - Policy:
   - Terms of service: tos.md
 - R:
