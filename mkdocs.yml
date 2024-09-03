@@ -11,9 +11,10 @@ nav:
   - Get Started: getstarted.md
   - Download: download.md
 - Installation:
-  - PengiOS Beginner: beginner.md
-  - PengiOS Pro: pro.md
+  - PengiOS Beginner: beginner-install.md
+  - PengiOS Pro: pro-install.md
 - Features: features.md
+- PengiOS Pro: pro.md
 - Configuration: config.md
 - Support:
   - Forums: https://github.com/PengiOS/Forums/discussions

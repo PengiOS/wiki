@@ -8,7 +8,7 @@ If you're a penguin living in Antarctica, this is the perfect operating system f
 
 ### Accessibility and flexibility
 
-PengiOS is incredibly accessible for penguins, with a super easy to learn KDE Plasma Desktop Environment, themed specifically to be easy on your penguin hands. Buttons and interfaces are large and easy on your penguin eyes so you can spend them hunting for fish instead of staring at small text on a screen. And being KDE, it's super modular, and you can customize it A LOT, as you wish.
+PengiOS is incredibly accessible for penguins, with a super easy to learn KDE Plasma Desktop Environment, themed specifically to be easy on your penguin hands. Buttons and interfaces are large and easy on your penguin eyes so you can spend them hunting for fish instead of staring at small text on a screen. And being KDE, it's super modular, and you can customise it A LOT, as you wish.
 
 ### Education
 
@@ -20,7 +20,7 @@ It's also free software, sometimes referred to (in a different way) as Open Sour
 
 ## For humans
 
-PengiOS is for humans too. From penguin-lovers to new [GNU/]Linux users to normal people too, we've made the OS easy to use and learn.
+PengiOS is for humans too. From penguin-lovers to new [GNU/]Linux users to normal people too, we've made the OS easy to use and to learn from.
 
 ### Great introduction to Linux with Luma!
 
@@ -28,7 +28,7 @@ PengiOS is based on Luma Linux, made by us too, which has the goal of making Lin
 
 ### Flexible Desktop... and PENGUINS!!!!
 
-Better? How? Well, our desktop environment, KDE Plasma, is easy to use and has been made with penguins in mind; both for them to use, and for enthusiasts! Who doesn't love a cute penguin? Who doesn't love a few constantly on your desktop, keeping you happy and productive through your day? Everything from our wallpaper to our UI to our themes to our naming to our startpage in Firefox is themed around these little fellows.
+Better? How? Well, our desktop environment, KDE Plasma, is easy to use and has been made with penguins in mind; for enthusiasts too! Who doesn't love a cute penguin? Who doesn't love a few constantly on your desktop, keeping you happy and productive through your day? Everything from our wallpaper to our UI to our themes to our naming to our startpage in Firefox is themed around these little fellows. Don't like them (:O)? KDE Plasma is super modular and customisable.
 
 ### FREEEEEEDOOMMM
 
@@ -36,4 +36,4 @@ And finally, it's free software, sometimes referred to (in a different way) as O
 
 ## I'm a pro!
 
-Well, that's great news for you! We also offer [PengiOS Pro](/pro), based on Luma Flex (and hence, Arch) instead of Debian (Luma), using a preconfigured easy installer for more advanced yet still curious and adventurous users, penguins and humans alike. It uses a more advanced Hyprland window manager, but with a preconfigured environment for you unless you so choose. From there you'll have access to new theming options for your Hyprland environment, new Luma guides and tutorials specifically for our Arch-based distros (Luma Flex and PengiOS Pro), and new possibilities, while still being able to tinker freely and experiment outside of the tutorials, understanding everything about the system. The installer is friendly, good looking and easy to use, while still guiding through exactly what it's doing, using the 'traditional Arch method'. Overall, it's a great way for decently experienced but still curious users of PengiOS (or Luma) to extend their knowledge and transform their desktop into one that suits their needs.
+Well, that's great news for you! We also offer [PengiOS Pro](/wiki/pro), based on Luma Flex (and hence, Arch) instead of Debian (Luma), using a preconfigured easy installer for more advanced yet still curious and adventurous users, penguins and humans alike. It uses a more advanced Hyprland window manager, but with a preconfigured environment for you unless you so choose. From there you'll have access to new theming options for your Hyprland environment, new Luma guides and tutorials specifically for our Arch-based distros (Luma Flex and PengiOS Pro), and new possibilities, while still being able to tinker freely and experiment outside of the tutorials, understanding everything about the system. The installer is friendly, good looking and easy to use, while still guiding through exactly what it's doing, using the 'traditional Arch method'. Overall, it's a great way for decently experienced but still curious users of PengiOS (or Luma) to extend their knowledge and transform their desktop into one that suits their needs.
