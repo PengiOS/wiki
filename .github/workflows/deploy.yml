@@ -29,4 +29,4 @@ jobs:
           pip install mkdocs mkdocs-dracula-theme
 
       - name: Deploy on gh-pages with MkDocs
-        run: mkdocs gh-deploy --clean --remote-name https://${{ secrets.GITHUB_TOKEN }}@github.com/PengiOS/wiki.git
+        run: mkdocs gh-deploy --clean --remote-name https://${{ secrets.GITHUB_TOKEN }}@github.com/PengiOS/wiki.git --force
