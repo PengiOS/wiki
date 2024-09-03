@@ -26,4 +26,4 @@ jobs:
           pip install mkdocs mkdocs-dracula-theme
 
       - name: Deploy on gh-pages with MkDocs
-        run: mkdocs gh-pages
+        run: mkdocs gh-deploy
