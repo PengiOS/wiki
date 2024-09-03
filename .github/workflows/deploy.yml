@@ -25,13 +25,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-dracula-theme
 
-      - name: Build the MkDocs site
-        run: mkdocs build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          path: ./site/
+      - name: Deploy on gh-pages with MkDocs
+        run: mkdocs gh-deploy --clean --remote-name https://${{ secrets.GITHUB_TOKEN }}@github.com/PengiOS/wiki.git
