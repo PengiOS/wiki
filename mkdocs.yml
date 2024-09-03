@@ -5,6 +5,28 @@ theme:
   colorscheme: dracula
 nav:
 - Home: index.md
-- Get Started: getstarted.md
-- Installation: install.md
-
+- Get Started:
+  - Why Pengi OS: why.md
+  - Get Started: getstarted.md
+  - Download: download.md
+- Installation:
+  - PengiOS Beginner: beginner.md
+  - PengiOS Pro: pro.md
+- Features: features.md
+- Configuration: config.md
+- Support:
+  - Forums: https://github.com/PengiOS/Forums/discussions
+  - FAQ: faq.md
+  - Troubleshooting: troubleshoot.md
+- Join our discord: https://discord.gg/nEYhYFEfpA\
+- Changelogs: github.com/pengios/pengios
+- Policy:
+  - Terms of service: tos.md
+- R:
+  - I:
+    - C:
+      - K:
+        - R:
+          - O:
+            - L:
+              - L: rickroll.md
