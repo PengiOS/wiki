@@ -1,7 +1,7 @@
 site_name: PengiOS Wiki
 theme:
   name: dracula
-  custom_dir: dracula
+  # custom_dir: dracula
   colorscheme: dracula
   favicon: img/favicon.ico
 nav:
