@@ -1,4 +1,4 @@
-name: Deploy MkDocs to website repo
+name: Build & deploy MkDocs to GitHub Pages
 
 on:
   push:
