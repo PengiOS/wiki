@@ -4,13 +4,15 @@ theme:
   # custom_dir: dracula
   colorscheme: dracula
   favicon: img/favicon.ico
+  repo_url: https://github.com/PengiOS/PengiOS
+  repo_name: PengiOS/PengiOS
   #extra_css: /css/style.css
 nav:
 - Home: index.md
 - Get Started:
   - Why Pengi OS: why.md
   - Get Started: getstarted.md
-  - Download: download.md
+  - Download: https://github.com/PengiOS/PengiOS/releases
 - Installation:
   - PengiOS Beginner: beginner-install.md
   - PengiOS Pro: pro-install.md
@@ -26,11 +28,3 @@ nav:
 - Changelogs: https://github.com/pengios/pengios
 - Policy:
   - Terms of service: tos.md
-- R:
-  - I:
-    - C:
-      - K:
-        - R:
-          - O:
-            - L:
-              - L: rickroll.md
